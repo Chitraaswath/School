@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Chart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="menu">
+            <img id="logo" src="logo1.jpg" alt="school logo">
+            <a href="welcome.html">Home</a>
+ <a href="extra.html">Extra Activity</a>
+            <a href="monthly.html">Monthly Chart</a>
+            <a href="Student.html">Student Details</a>
+            <a href="timetable.html">Time Table</a>
+            <a href="index.html">Logout</a>
+        </div>
+    </div>
+    <h1 class="headingh1" style="text-align: center;">MONTHLY ACTIVITIES <i class="fa-solid fa-user"></i><span class="userontop"></span></h1>
+    <div class="monthlybox">
+        <div class="monthlyform">
+            <h1 class="heading">Add Activity</h1>
+            <label for="taskid">Id</label>
+            <input type="text" id="taskid" placeholder="Enter task id">
+            <label for="tasksubject">Subject</label>
+            <input type="text" id="tasksubject" placeholder="Enter subject">
+            <label for="taskactivity">Activity</label>
+            <input type="text" id="taskactivity" placeholder="Enter activity description">
+            <button onclick="addtask()">Add Activity</button>
+        </div>
+        <div id="monthly">
+            
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            monthlycall();
+            const username = sessionStorage.getItem('username');
+            const userontop = document.getElementsByClassName('userontop')[0];
+            userontop.innerText = username;
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/c46c72e4b7.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Activity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="menu">
+            <img id="logo" src="logo1.jpg" alt="school logo">
+            <a href="welcome.html">Home</a>
+            <a href="extra.html">Extra Activity</a>
+            <a href="monthly.html">Monthly Chart</a>
+            <a href="Student.html">Student Details</a>
+            <a href="timetable.html" id="studentpage">Time Table</a>
+            <a href="index.html">Logout</a>
+        </div>
+    </div>
+    <h1 class="headingh1" style="text-align: center;">Extra ACTIVITIES  <i class="fa-solid fa-user"></i><span class="userontop"></span></h1>
+    <div class="extrabox">
+        <div class="monthlyform">
+            <h1 class="heading">Add Activity</h1>
+            <label for="extaskid">Id</label>
+            <input type="text" id="extaskid" placeholder="Enter task id">
+            <label for="extasksubject">Subject</label>
+            <input type="text" id="extasksubject" placeholder="Enter subject">
+            <label for="extaskactivity">Activity</label>
+            <input type="text" id="extaskactivity" placeholder="Enter activity description">
+            <button onclick="extraactivity()">Add Activity</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const username = sessionStorage.getItem('username');
+            const userontop = document.getElementsByClassName('userontop')[0];
+            userontop.innerText = username;
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/c46c72e4b7.js" crossorigin="anonymous"></script>
+</body>
+</html>

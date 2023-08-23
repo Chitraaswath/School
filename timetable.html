@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Flower School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="menu">
+            <img id="logo" src="logo1.jpg" alt="school logo">
+            <a href="welcome.html">Home</a>
+ <a href="extra.html">Extra Activity</a>
+            <a href="monthly.html">Monthly Chart</a>
+            <a href="Student.html">Student Details</a>
+            <a href="timetable.html">Time Table</a>
+            <a href="index.html">Logout</a>
+        </div>
+    </div>
+    <h1  class="headingh1" style="text-align: center;">Time Table <i class="fa-solid fa-user"></i><span class="userontop"></span></h1>
+    <div class="mainouter">
+        <div class="main">
+            <table>
+                <tr>
+                    <th>Hours</th>
+                    <th>8:30-9:30</th>
+                    <th>9:30-10:30</th>
+                    <th>10:3-11:30</th>
+                    <th>11:30-12:30</th>
+                    <th>12:30-2:00</th>
+                    <th>2:00-3:00</th>
+                    <th>3:00-4:00</th>
+                    <th>4:00-5:00</th>
+                </tr>
+                <tr>
+                    <td>MONDAY</td>
+                    <td>SUB1</td>
+                    <td>SUB2</td>
+                    <td rowspan="6">Lunch</td>
+                    <td>SUB3</td>
+                    <td>SUB4</td>
+                    <td>SUB5</td>
+                    <td colspan="2">Counselling class</td>
+                </tr>
+                <tr>
+                    <td>TUESDAY
+                    <td>SUB1</td>
+                    <td>SUB2</td>
+                    <td>SUB3</td>
+                    <td>---</td>
+                    <td>SUB4</td>
+                    <td>SUB5</td>
+                    <td>library</td>
+                </tr>
+                <tr>
+                    <td>WEDNESDAY
+                    <td>SUB1</td>
+                    <td>SUB2</td>
+                    <td></td>
+                    <td>---</td>
+                    <td colspan="3">Lab</td>
+                </tr>
+                <tr>
+                    <td>THURSDAY
+                    <td>SUB1</td>
+                    <td>SUB2</td>
+                    <td>SUB3</td>
+                    <td>---</td>
+                    <td>SUB4</td>
+                    <td>SUB5</td>
+                    <td>library</td>
+                </tr>
+                <tr>
+                    <td>FRIDAY</td>
+                    <td>SUB1</td>
+                    <td>SUB2</td>
+                    <td>SUB3</td>
+                    <td>---</td>
+                    <td>SUB4</td>
+                    <td>SUB5</td>
+                    <td>library</td>
+                <tr>
+                    <td>SATURDAY</td>
+                    <td>SUB1</td>
+                    <td>seminar</td>
+                    <td>SUB4</td>
+                    <td>SUB5</td>
+                    <td colspan="2">library</td>
+                    <td>Games</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const username = sessionStorage.getItem('username');
+            const userontop = document.getElementsByClassName('userontop')[0];
+            userontop.innerText = username;
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/c46c72e4b7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
